@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+      <hr />
+      <div class="col-md-9">
+        <h2>List of Subreddits</h2>
+        <ul>
+            <!-- To loop through all subreddits -->
+          <li *ngFor="let subreddit of subreddits">
+              <a routerLink="/view-subreddit/{{subreddit.id}}">{{subreddit.name}}</a>
+          </li>
+        </ul>
+      </div>
+      <!--Right side of page-->
+      <div class="col-md-3">
+        <app-sidebar></app-sidebar>
+      </div>
+    </div>
+  </div>
